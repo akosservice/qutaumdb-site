@@ -120,8 +120,8 @@ export default function HeroSplit() {
         </div>
 
         <Card className="overflow-hidden bg-muted/30 border-border/50">
-          <div className="bg-muted/50 px-4 py-3 flex items-center justify-between border-b border-border/50">
-            <Tabs value={activeTab} onValueChange={setActiveTab} className="flex-1">
+          <Tabs value={activeTab} onValueChange={setActiveTab}>
+            <div className="bg-muted/50 px-4 py-3 flex items-center justify-between border-b border-border/50">
               <TabsList className="bg-transparent h-auto p-0 gap-1" data-testid="tabs-language">
                 <TabsTrigger 
                   value="flutter" 
@@ -145,39 +145,39 @@ export default function HeroSplit() {
                   Swift
                 </TabsTrigger>
               </TabsList>
-            </Tabs>
-            
-            <Button
-              variant="ghost"
-              size="sm"
-              onClick={handleCopy}
-              className="gap-2 ml-4"
-              data-testid="button-copy"
-            >
-              {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
-              {copied ? "Copied" : "Copy"}
-            </Button>
-          </div>
+              
+              <Button
+                variant="ghost"
+                size="sm"
+                onClick={handleCopy}
+                className="gap-2 ml-4"
+                data-testid="button-copy"
+              >
+                {copied ? <Check className="w-4 h-4" /> : <Copy className="w-4 h-4" />}
+                {copied ? "Copied" : "Copy"}
+              </Button>
+            </div>
 
-          <div className="relative">
-            <TabsContent value="flutter" className="m-0">
-              <pre className="p-6 overflow-x-auto text-sm font-mono leading-relaxed min-h-[400px]" data-testid="code-flutter">
-                <code className="text-foreground/90">{codeExamples.flutter}</code>
-              </pre>
-            </TabsContent>
+            <div className="relative">
+              <TabsContent value="flutter" className="m-0">
+                <pre className="p-6 overflow-x-auto text-sm font-mono leading-relaxed min-h-[400px]" data-testid="code-flutter">
+                  <code className="text-foreground/90">{codeExamples.flutter}</code>
+                </pre>
+              </TabsContent>
 
-            <TabsContent value="kotlin" className="m-0">
-              <pre className="p-6 overflow-x-auto text-sm font-mono leading-relaxed min-h-[400px]" data-testid="code-kotlin">
-                <code className="text-foreground/90">{codeExamples.kotlin}</code>
-              </pre>
-            </TabsContent>
+              <TabsContent value="kotlin" className="m-0">
+                <pre className="p-6 overflow-x-auto text-sm font-mono leading-relaxed min-h-[400px]" data-testid="code-kotlin">
+                  <code className="text-foreground/90">{codeExamples.kotlin}</code>
+                </pre>
+              </TabsContent>
 
-            <TabsContent value="swift" className="m-0">
-              <pre className="p-6 overflow-x-auto text-sm font-mono leading-relaxed min-h-[400px]" data-testid="code-swift">
-                <code className="text-foreground/90">{codeExamples.swift}</code>
-              </pre>
-            </TabsContent>
-          </div>
+              <TabsContent value="swift" className="m-0">
+                <pre className="p-6 overflow-x-auto text-sm font-mono leading-relaxed min-h-[400px]" data-testid="code-swift">
+                  <code className="text-foreground/90">{codeExamples.swift}</code>
+                </pre>
+              </TabsContent>
+            </div>
+          </Tabs>
         </Card>
       </div>
 
