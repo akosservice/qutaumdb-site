@@ -14,20 +14,20 @@ export default function AboutCreator() {
             <div className="w-20 h-20 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4">
               <User className="w-10 h-10 text-primary" />
             </div>
-            <CardTitle className="text-2xl">Deleevro D</CardTitle>
+            <CardTitle className="text-2xl">SanojS</CardTitle>
             <p className="text-muted-foreground">Creator & Developer</p>
           </CardHeader>
           <CardContent className="text-center">
             <p className="text-base md:text-lg text-muted-foreground leading-relaxed" data-testid="text-creator-bio">
-              QutaumDB is built by Deleevro D, the creator of{" "}
+              QutaumDB is built by SanojS, the creator of{" "}
               <a 
-                href="https://qsecurex.com" 
+                href="https://qsecurex.space" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="text-primary hover:underline"
                 data-testid="link-qsecurex"
               >
-                Qsecurex
+                QSecureX
               </a>
               , a secure offline vault app. Passionate about privacy, encryption, and developing efficient developer tools.
             </p>

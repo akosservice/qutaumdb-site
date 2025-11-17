@@ -99,10 +99,11 @@ export default function HeroSplit() {
         <div className="space-y-8">
           <div>
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold leading-tight mb-6" data-testid="text-hero-title">
-              Run Encrypted Databases Everywhere
+              Run Encrypted <a className="text-primary"> Databases </a>
+ Everywhere
             </h1>
             <p className="text-lg md:text-xl text-muted-foreground leading-relaxed max-w-xl" data-testid="text-hero-description">
-              QutaumDB is a free, open-source, offline database engine that lets developers create secure, encrypted local storage for mobile apps, desktop apps, and embedded systems.
+              QutaumDB is a offline database engine that lets developers create secure, encrypted local storage for mobile apps, desktop apps, and embedded systems.
             </p>
           </div>
 
@@ -192,15 +193,15 @@ export default function HeroSplit() {
         </Card>
       </div>
 
-      <div className="absolute bottom-8 left-0 right-0 text-center">
-        <p className="text-sm text-muted-foreground" data-testid="text-documentation-link">
-          Learn more about QutaumDB with our{" "}
-          <a href="#documentation" className="text-primary hover:underline">
-            documentation
-          </a>
-          .
-        </p>
-      </div>
+<div className="absolute bottom-8 left-0 right-0 text-center hidden md:block">
+  <p className="text-sm text-muted-foreground" data-testid="text-documentation-link">
+    Learn more about QutaumDB with our{" "}
+    <a href="#documentation" className="text-primary hover:underline">
+      documentation
+    </a>
+    .
+  </p>
+</div>
     </section>
   );
 }
