@@ -286,3 +286,28 @@
     inset: -1px;
   }
 }
+/* Smooth scrolling promo banner */
+.scroll-container {
+  display: inline-flex;
+  animation: scroll-left 12s linear infinite;
+}
+
+.scroll-text {
+  padding-right: 2rem;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+/* Fade-out animation */
+@keyframes fadeOut {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
+}
+
+.animate-fade-out {
+  animation: fadeOut 1s ease-in-out forwards;
+  animation-delay: 29s; /* fades at 29, hides at 30 */
+}
